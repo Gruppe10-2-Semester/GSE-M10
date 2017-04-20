@@ -36,7 +36,7 @@ public class Sale {
         return date;
     }
 
-    public boolean isIsComplete() {
+    public boolean isComplete() {
         return isComplete;
     }
 

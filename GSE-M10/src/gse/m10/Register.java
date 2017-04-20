@@ -25,19 +25,12 @@ public class Register {
         currentSale.makeLineItem(productDescription, quantity);
     }
     public void makePayment(double amount) {
-
-        
-
-
+        this.currentSale.getPayment().setAmount(amount);
     }
 
 
     public void endSale() {
-
-
-
-
-
+        this.currentSale.setIsComplete(true);
     }
 
 }

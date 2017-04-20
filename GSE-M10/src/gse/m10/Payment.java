@@ -11,13 +11,13 @@ package gse.m10;
  */
 public class Payment {
     
-    private float amount;
+    private double amount;
 
-    public float getAmount() {
+    public double getAmount() {
         return amount;
     }
 
-    public void setAmount(float amount) {
+    public void setAmount(double amount) {
         this.amount = amount;
     }
     
