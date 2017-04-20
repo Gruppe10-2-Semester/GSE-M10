@@ -11,30 +11,30 @@ public class Register {
     private Sale currentSale;
     private ProductDescription productDescription;
 
-    public Register() {
-        productCatalog = new ProductCatalog();
+    public Register(ProductCatalog productCatalog) {
+        this.productCatalog = productCatalog;
     }
 
 
     public void makeNewSale(){
-
-
-
+        Date date = new Date();
+        currentSale = new Sale(date);
     }
     public void enterItem(String itemID, int quantity) {
-        Date date = new Date();
         productDescription = productCatalog.getProductDescription(itemID);
-        currentSale = new Sale(date);
         currentSale.makeLineItem(productDescription, quantity);
+    }
+    public void makePayment(double amount) {
+
+        
+
+
     }
 
 
     public void endSale() {
 
 
-
-    }
-    public void makePayment(double amount) {
 
 
 
