@@ -14,12 +14,16 @@ import java.util.Date;
 public class Sale {
     private Date date;
     private boolean isComplete;
+    private SalesLineItem[] salesLineItems;
+    private Payment payment;
     
-    public void Sale (Date date, boolean isComplete) {
+    public void Sale (Date date, float amount) {
         this.date = date;
         this.isComplete = false;
+        //this.payment = new Payment(amount);
     }
     
     public void makeLineItem () {
+        
     }
 }
