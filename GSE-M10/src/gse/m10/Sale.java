@@ -51,7 +51,7 @@ public class Sale {
     
     public double getTotal() {
         double amount;
-        
+
         amount = 0;
         for(SalesLineItem salesLineItem : this.salesLineItems) {
             amount += (salesLineItem.getProductDesciption().getPrice() * salesLineItem.getQuantity());

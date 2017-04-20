@@ -13,14 +13,18 @@ public class StoreTester {
 
 
         store.getRegister().makeNewSale();
-        store.getRegister().enterItem("Alex", 5);
-        store.getRegister().enterItem("Johan", 5);
+        store.getRegister().enterItem("Alex", 1);
+        store.getRegister().enterItem("Johan", 1);
         store.getRegister().makePayment(store.getRegister().getCurrentSale().getTotal());
-        store.getRegister().endSale();
+        store.addSale(store.getRegister().getCurrentSale());
 
         double total = store.getRegister().getCurrentSale().getTotal();
-
         System.out.println(total);
+
+
+        store.getRegister().endSale();
+
+
 
 
 

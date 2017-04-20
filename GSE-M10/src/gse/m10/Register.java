@@ -31,6 +31,7 @@ public class Register {
 
 
     public void endSale() {
+        this.getCurrentSale().getSalesLineItems().clear();
         this.currentSale.setIsComplete(true);
     }
 

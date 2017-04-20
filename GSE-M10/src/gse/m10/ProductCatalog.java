@@ -29,9 +29,6 @@ public class ProductCatalog {
         productDescriptions.add(new ProductDescription("InstruktorKim", "Kim er instruktor", 200));
 
 
-
-
-
     }
 
 
@@ -39,13 +36,11 @@ public class ProductCatalog {
 
         for(ProductDescription productDescription : productDescriptions) {
             if(productDescription.getItemID().equals(itemID)) {
+                System.out.println("Hallo er vi her?");
                 return productDescription;
             }
         }
-
         return null;
-
-
     }
 
     public List<ProductDescription> getProductDescriptions() {

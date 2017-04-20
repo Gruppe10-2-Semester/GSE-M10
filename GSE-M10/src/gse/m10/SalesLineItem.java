@@ -14,7 +14,7 @@ public class SalesLineItem {
     private int quantity;
     
     public SalesLineItem (ProductDescription productDescription, int quantity) {
-        this.productDesciption = productDesciption;
+        this.productDesciption = productDescription;
         this.quantity = quantity;
     }
 
