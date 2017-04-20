@@ -21,6 +21,7 @@ public class Sale {
     public Sale (Date date) {
         this.date = date;
         this.isComplete = false;
+        this.payment = new Payment();
     }
     
     public void makeLineItem (ProductDescription productDescription, int quantity) {

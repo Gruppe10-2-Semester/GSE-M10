@@ -12,10 +12,6 @@ package gse.m10;
 public class Payment {
     
     private float amount;
-    
-    public Payment (float amount) {
-        this.amount = amount;
-    }
 
     public float getAmount() {
         return amount;
