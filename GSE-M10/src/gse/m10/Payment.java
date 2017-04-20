@@ -13,7 +13,7 @@ public class Payment {
     private ProductDescription productDesciption;
     private float amount;
     
-    public void Payment (ProductDescription productDesciption, float amount) {
+    public Payment (ProductDescription productDesciption, float amount) {
         this.productDesciption = productDesciption;
         this.amount = amount;
     }

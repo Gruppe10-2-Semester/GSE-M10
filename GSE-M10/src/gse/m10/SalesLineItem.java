@@ -12,7 +12,7 @@ package gse.m10;
 public class SalesLineItem {
     private int quantity;
     
-    public void SalesLineItem (int quantity) {
+    public SalesLineItem (int quantity) {
         this.quantity = quantity;
     }
 }

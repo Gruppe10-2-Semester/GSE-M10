@@ -5,6 +5,7 @@
  */
 package gse.m10;
 
+import java.util.ArrayList;
 import java.util.Date;
 
 /**
@@ -14,16 +15,16 @@ import java.util.Date;
 public class Sale {
     private Date date;
     private boolean isComplete;
-    private SalesLineItem[] salesLineItems;
+    private ArrayList<SalesLineItem> salesLineItems;
     private Payment payment;
     
-    public void Sale (Date date, float amount) {
+    public Sale (Date date, float amount) {
         this.date = date;
         this.isComplete = false;
         //this.payment = new Payment(amount);
     }
     
-    public void makeLineItem () {
-        
+    public void makeLineItem (int quantity) {
+        salesLineItems.add(new SalesLineItem(quantity));
     }
 }
