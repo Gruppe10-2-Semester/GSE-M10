@@ -21,10 +21,30 @@ public class Sale {
     public Sale (Date date) {
         this.date = date;
         this.isComplete = false;
-        //this.payment = new Payment(amount);
     }
     
     public void makeLineItem (ProductDescription productDescription, int quantity) {
         salesLineItems.add(new SalesLineItem(productDescription, quantity));
     }
+
+    public void setIsComplete(boolean isComplete) {
+        this.isComplete = isComplete;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public boolean isIsComplete() {
+        return isComplete;
+    }
+
+    public ArrayList<SalesLineItem> getSalesLineItems() {
+        return salesLineItems;
+    }
+
+    public Payment getPayment() {
+        return payment;
+    }
+    
 }

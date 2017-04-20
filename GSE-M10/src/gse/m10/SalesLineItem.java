@@ -15,4 +15,9 @@ public class SalesLineItem {
     public SalesLineItem (ProductDescription productDescription, int quantity) {
         this.quantity = quantity;
     }
+
+    public int getQuantity() {
+        return quantity;
+    }
+    
 }
