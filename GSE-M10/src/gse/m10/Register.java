@@ -25,6 +25,7 @@ public class Register {
         currentSale.makeLineItem(productDescription, quantity);
     }
     public void makePayment(double amount) {
+
         this.currentSale.getPayment().setAmount(amount);
     }
 
