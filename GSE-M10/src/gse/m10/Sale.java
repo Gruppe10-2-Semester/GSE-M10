@@ -18,13 +18,13 @@ public class Sale {
     private ArrayList<SalesLineItem> salesLineItems;
     private Payment payment;
     
-    public Sale (Date date, float amount) {
+    public Sale (Date date) {
         this.date = date;
         this.isComplete = false;
         //this.payment = new Payment(amount);
     }
     
-    public void makeLineItem (int quantity) {
-        salesLineItems.add(new SalesLineItem(quantity));
+    public void makeLineItem (ProductDescription productDescription, int quantity) {
+        salesLineItems.add(new SalesLineItem(productDescription, quantity));
     }
 }
