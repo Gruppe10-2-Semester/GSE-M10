@@ -22,6 +22,7 @@ public class Sale {
         this.date = date;
         this.isComplete = false;
         this.payment = new Payment();
+        this.salesLineItems = new ArrayList<>();
     }
     
     public void makeLineItem (ProductDescription productDescription, int quantity) {
@@ -46,6 +47,17 @@ public class Sale {
 
     public Payment getPayment() {
         return payment;
+    }
+    
+    public double getTotal() {
+        double amount;
+        
+        amount = 0;
+        for(SalesLineItem salesLineItem : this.salesLineItems) {
+            amount += (salesLineItem.getProductDesciption().getPrice() * salesLineItem.getQuantity());
+        } 
+        
+        return amount;
     }
     
 }
