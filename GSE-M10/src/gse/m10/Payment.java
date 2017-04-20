@@ -10,16 +10,11 @@ package gse.m10;
  * @author Alex
  */
 public class Payment {
-    private ProductDescription productDesciption;
+    
     private float amount;
     
-    public Payment (ProductDescription productDesciption, float amount) {
-        this.productDesciption = productDesciption;
+    public Payment (float amount) {
         this.amount = amount;
-    }
-
-    public ProductDescription getProductDesciption() {
-        return productDesciption;
     }
 
     public float getAmount() {
