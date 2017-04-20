@@ -11,7 +11,15 @@ public class StoreTester {
 
         Store store = new Store("Alexvej 15", "Ærlige Alex' Elektronik");
 
+
+        store.getRegister().makeNewSale();
         store.getRegister().enterItem("Alex", 5);
+        store.getRegister().enterItem("Johan", 5);
+        store.getRegister().makePayment();
+
+
+
+
 
 
 

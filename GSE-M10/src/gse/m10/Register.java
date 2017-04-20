@@ -34,4 +34,8 @@ public class Register {
         this.currentSale.setIsComplete(true);
     }
 
+    public Sale getCurrentSale() {
+        return currentSale;
+    }
+
 }
