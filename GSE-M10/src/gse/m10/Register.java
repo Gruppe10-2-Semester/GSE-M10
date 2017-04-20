@@ -22,14 +22,13 @@ public class Register {
 
     }
     public void enterItem(String itemID, int quantity) {
-
         Date date = new Date();
         productDescription = productCatalog.getProductDescription(itemID);
         currentSale = new Sale(date);
-
-
-
+        currentSale.makeLineItem(productDescription, quantity);
     }
+
+
     public void endSale() {
 
 
