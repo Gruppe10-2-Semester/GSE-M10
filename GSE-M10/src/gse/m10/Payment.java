@@ -17,4 +17,12 @@ public class Payment {
         this.productDesciption = productDesciption;
         this.amount = amount;
     }
+
+    public ProductDescription getProductDesciption() {
+        return productDesciption;
+    }
+
+    public float getAmount() {
+        return amount;
+    }
 }

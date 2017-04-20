@@ -35,5 +35,7 @@ public class ProductCatalog {
 
     }
 
-
+    public List<ProductDescription> getProductDescriptions() {
+        return productDescriptions;
+    }
 }
